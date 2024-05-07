@@ -17,8 +17,8 @@ jobs:
       
   call-reusable-workflow:
     uses: ./.github/workflows/workflow_CD_reusable.yml
-    needs: 
+    needs: job1
     with:
       image-to-build: eperezstemdo/angulaimage:0.0.0-snapshot
-      artifact_id: 
+      artifact_id: needs.job1.outputs.id
       
