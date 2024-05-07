@@ -5,6 +5,9 @@ on:
       image-to-build:
         required: true
         type: string
+      artifact-id:
+        required: true
+        type: string 
 jobs:
   deploy-curl:
     runs-on: ubuntu-latest
