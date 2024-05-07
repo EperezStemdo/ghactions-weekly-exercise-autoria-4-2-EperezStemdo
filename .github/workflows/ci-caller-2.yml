@@ -1,1 +1,21 @@
+name: Crear imagen Docke 
 
+on:
+  push:
+    branches: 
+      - '*'
+permissions:
+  packages: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+  call-reusable-workflow:
+    uses: ./.github/workflows/ci-reusable-2.yml
+    with:
+      tag: "1.0.0" 
