@@ -1,4 +1,4 @@
-name: Crear imagen Docke 
+name: Artifactory
 
 on:
   push:
