@@ -17,5 +17,4 @@ jobs:
 
   call-reusable-workflow:
     uses: ./.github/workflows/ci-reusable-2.yml
-    with:
-      tag: "1.0.0" 
+    
