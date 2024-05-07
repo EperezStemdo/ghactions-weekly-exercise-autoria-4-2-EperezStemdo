@@ -9,3 +9,4 @@ jobs:
     uses: ./.github/workflows/workflow_CD_reusable.yml
     with:
       image-to-build: eperezstemdo/angulaimage:0.0.0-snapshot
+      
