@@ -4,9 +4,20 @@ on:
     types: [closed]
     branches: 
       - 'main'
-jobs:     
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.get_id.outputs.id }} 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: 
+      
   call-reusable-workflow:
     uses: ./.github/workflows/workflow_CD_reusable.yml
+    needs: 
     with:
       image-to-build: eperezstemdo/angulaimage:0.0.0-snapshot
+      artifact_id: 
       
