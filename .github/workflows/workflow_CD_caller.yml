@@ -13,6 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: traer id del artefacto
+        uses:
       
   call-reusable-workflow:
     uses: ./.github/workflows/workflow_CD_reusable.yml
